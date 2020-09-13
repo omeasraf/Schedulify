@@ -16,6 +16,9 @@
 		B44F7756250D7EFA00B3BA52 /* SchedulifyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44F7755250D7EFA00B3BA52 /* SchedulifyTests.swift */; };
 		B44F7761250D7EFA00B3BA52 /* SchedulifyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44F7760250D7EFA00B3BA52 /* SchedulifyUITests.swift */; };
 		B44F776F250D90B100B3BA52 /* schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44F776E250D90B100B3BA52 /* schedule.swift */; };
+		B4F631F6250E948F00B12E01 /* customPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F631F5250E948F00B12E01 /* customPath.swift */; };
+		B4F631F9250E982A00B12E01 /* home.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F631F8250E982A00B12E01 /* home.swift */; };
+		B4F631FB250EA6B200B12E01 /* classes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F631FA250EA6B200B12E01 /* classes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		B44F7760250D7EFA00B3BA52 /* SchedulifyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulifyUITests.swift; sourceTree = "<group>"; };
 		B44F7762250D7EFA00B3BA52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B44F776E250D90B100B3BA52 /* schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = schedule.swift; sourceTree = "<group>"; };
+		B4F631F5250E948F00B12E01 /* customPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customPath.swift; sourceTree = "<group>"; };
+		B4F631F8250E982A00B12E01 /* home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = home.swift; sourceTree = "<group>"; };
+		B4F631FA250EA6B200B12E01 /* classes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = classes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,8 @@
 		B44F773D250D7EF700B3BA52 /* Schedulify */ = {
 			isa = PBXGroup;
 			children = (
+				B4F631F7250E981D00B12E01 /* Views */,
+				B4F631F4250E947500B12E01 /* Paths */,
 				B44F773E250D7EF700B3BA52 /* AppDelegate.swift */,
 				B44F7740250D7EF700B3BA52 /* SceneDelegate.swift */,
 				B44F7742250D7EF700B3BA52 /* ContentView.swift */,
@@ -137,6 +145,23 @@
 				B44F7762250D7EFA00B3BA52 /* Info.plist */,
 			);
 			path = SchedulifyUITests;
+			sourceTree = "<group>";
+		};
+		B4F631F4250E947500B12E01 /* Paths */ = {
+			isa = PBXGroup;
+			children = (
+				B4F631F5250E948F00B12E01 /* customPath.swift */,
+			);
+			path = Paths;
+			sourceTree = "<group>";
+		};
+		B4F631F7250E981D00B12E01 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B4F631F8250E982A00B12E01 /* home.swift */,
+				B4F631FA250EA6B200B12E01 /* classes.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,8 +295,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4F631FB250EA6B200B12E01 /* classes.swift in Sources */,
+				B4F631F9250E982A00B12E01 /* home.swift in Sources */,
 				B44F773F250D7EF700B3BA52 /* AppDelegate.swift in Sources */,
 				B44F7741250D7EF700B3BA52 /* SceneDelegate.swift in Sources */,
+				B4F631F6250E948F00B12E01 /* customPath.swift in Sources */,
 				B44F776F250D90B100B3BA52 /* schedule.swift in Sources */,
 				B44F7743250D7EF700B3BA52 /* ContentView.swift in Sources */,
 			);

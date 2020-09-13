@@ -8,25 +8,33 @@
 
 import SwiftUI
 
+
+
 struct schedule: View {
-    let colors:[Color] = [Color.red,Color.green,Color.blue,Color.yellow,Color.gray]
-    var randomColor:Color = Color.red;
+    
+    
+    
+    
+    var cardColor:Color = Color.red;
     var title:String = ""
     var date:String = ""
     var icon:String = "doc.fill"
-    init(title: String, date:String,icon:String) {
+    init(title: String, date:String,icon:String, color: Color) {
         self.title = title
         self.date = date
         self.icon = icon
-        randomColor =  self.colors[Int.random(in: 0..<self.colors.count)]
+        self.cardColor =  color
     }
     var body: some View {
         HStack(spacing:0){
             Rectangle()
-                
-                .fill(self.randomColor)
+      
+                .fill(self.cardColor)
                 
                 .frame(width: 6)
+            .cornerRadius(20, corners: [.topLeft, .bottomLeft])
+                
+                
             
             
             VStack(alignment: .leading){
@@ -48,7 +56,7 @@ struct schedule: View {
                     Spacer()
                     Image(systemName: self.icon)
                     .font(.system(size: 20.0))
-                        .foregroundColor(self.randomColor)
+                        .foregroundColor(self.cardColor)
                 }
                 HStack(alignment: .top, spacing: -120, content: {
                     Spacer()
@@ -56,7 +64,7 @@ struct schedule: View {
                     ForEach(1..<4) { _ in
                         Circle()
                             .strokeBorder(Color.white,lineWidth: 1)
-                            .background(Circle().foregroundColor(self.randomColor))
+                            .background(Circle().foregroundColor(self.cardColor))
                             .frame(height:30)
                             
                     }
@@ -73,8 +81,8 @@ struct schedule: View {
             }
                 
             .padding(.all,20)
-            .background(self.randomColor.opacity(0.3))
-            .cornerRadius(3)
+            .background(self.cardColor.opacity(0.3))
+            .cornerRadius(3, corners: [.topRight, .bottomRight])
             
         }.padding(.horizontal,10)
             .padding(.vertical,5)
@@ -83,6 +91,6 @@ struct schedule: View {
 
 struct schedule_Previews: PreviewProvider {
     static var previews: some View {
-        schedule(title: "Hello World",date:"date",icon:"doc.fill")
+        schedule(title: "Hello World",date:"date",icon:"doc.fill", color: Color.red)
     }
 }
